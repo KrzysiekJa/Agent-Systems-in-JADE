@@ -20,11 +20,11 @@ public class SenderAgent extends Agent {
 
                 if (zeroOrOne == 0) {
                     request = new ACLMessage(ACLMessage.CFP);
-                    request.addReceiver(new AID("BOT@10.129.11.172:1099/JADE"));
+                    request.addReceiver(new AID("BOT", AID.ISLOCALNAME));
                     request.setContent("CFP message.");
                 } else if (zeroOrOne == 1) {
                     request = new ACLMessage(ACLMessage.REQUEST);
-                    request.addReceiver(new AID("BOT@10.129.11.172:1099/JADE"));
+                    request.addReceiver(new AID("BOT", AID.ISLOCALNAME));
                     request.setContent("REQUEST message.");
                 }
                 myAgent.send(request);

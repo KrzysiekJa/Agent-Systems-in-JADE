@@ -15,4 +15,5 @@ Legend:
 3) Agents with different behaviours (rather simple).
 4) Agents with complex behaviours
 5) Simulation of communication of two agents.
+6) Performacne based on using of yellow pages (df).
 ```
